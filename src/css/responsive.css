@@ -1,0 +1,165 @@
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+
+}
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1197px) {
+    .App {
+        font-size: 20px;
+    }
+
+    .main {
+        width: 75%; 
+    }
+    
+    .hero {
+        width: 80%;
+    }
+
+    .project-left {
+        grid-column: 1 / span 6;
+    }
+    
+    .project-right {
+        grid-column: span 6 / -1;
+    }
+    
+}
+
+/* Normal desktop :991px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .App {
+        font-size: 18px;
+    }
+
+    .main {
+        width: 80%; 
+    }
+    
+    .hero {
+        width: 80%;
+    }
+
+    ul {
+        padding: 30px 40px 20px;;
+    }
+
+    li + li {
+        margin-left: 30px;
+    }
+
+    .project-left, .project-right {
+        border: 3px solid #fffa86;
+    }
+    
+    .project-left a img:hover, .project-right a img:hover {
+        border-top: 3px solid #fffa86;
+        border-left: 3px solid #fffa86;
+    }
+    
+
+    .project-left {
+        grid-column: 1 / span 5;
+    }
+    
+    .project-right {
+        grid-column: span 5 / -1;
+    }
+    
+}
+
+/* small mobile :576px. */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .App {
+        font-size: 16px;
+    }
+
+    .main {
+        width: 80%; 
+    }
+    
+    .hero {
+        width: 90%;
+    }
+
+    ul {
+        padding: 25px 30px 15px;
+    }
+
+    .project-left, .project-right {
+        border: 2px solid #fffa86;
+    }
+    
+    .project-left a img:hover, .project-right a img:hover {
+        border-top: 2px solid #fffa86;
+        border-left: 2px solid #fffa86;
+    }
+
+    .project-left {
+        grid-column: 1 / span 4;
+    }
+    
+    .project-right {
+        grid-column: span 4 / -1;
+    }
+}
+
+/* extra small mobile 320px. */
+
+@media (max-width: 575px) {
+    .App {
+        font-size: 12px;
+    }
+
+    .main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding: 20px 20px 15px;
+    }
+
+    .project-left, .project-right {
+        border: 2px solid #fffa86;
+    }
+    
+    .project-left a img:hover, .project-right a img:hover {
+        border-top: 2px solid #fffa86;
+        border-left: 2px solid #fffa86;
+    }   
+}
+
+@media only screen and (orientation: portrait) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    .container-grid {
+        grid-auto-rows: 350px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero {
+        width: 90%;
+        margin: 70px auto 30px 10%;
+    }
+
+    .hero-project {
+        width: 80%;
+        margin: 70px auto 30px 10%;
+        height: 280px;
+    }
+
+    .project-left img, .project-right img {
+        width: 100%;
+        height: 80%;
+    }
+}
