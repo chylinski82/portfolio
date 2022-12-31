@@ -1,9 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { ROUTES } from './App';
 import { descriptionsArr } from '../utils/descriptions';
 
 const Portfolio = (props) => {
 
-  const { width, breakpoint } = props;
+  const { width, breakpoint, setIndex } = props;
 
   const leftRight = (index) => {
     return index % 2 === 0 ? 'project-left' : 'project-right'
@@ -20,12 +23,18 @@ const Portfolio = (props) => {
         {descriptionsArr.map((obj) => {
           const i = descriptionsArr.indexOf(obj);
           return <div className={leftRight(i)} key={descriptionsArr[i].key}>
-            <a className='image-link' href={descriptionsArr[i].link}>
+            <a className='image-link' href={descriptionsArr[i].web} 
+                                      target="_blank" 
+                                      rel="noreferrer">
               <img src={descriptionsArr[i].img[windowWidth()]} alt={descriptionsArr[i].alt}/>
             </a>
-            <a href={descriptionsArr[i].link}>{descriptionsArr[i].name}</a>
+            <a href={descriptionsArr[i].web} 
+               target="_blank" 
+               rel="noreferrer">{descriptionsArr[i].name}</a>
             <span>{descriptionsArr[i].description}</span>
-            <p className="read-more">read more...</p>
+            <NavLink to={ROUTES.PROJECTS} 
+                     className="read-more"
+                     onClick={() => setIndex(i)}>read more...</NavLink>
           </div>
         })}
       </div>

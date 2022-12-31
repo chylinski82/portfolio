@@ -1,7 +1,7 @@
 import React from 'react';
-import pic from '../images/hero.jpg';
+import pic from '../images/hero-cv.jpg';
 
-const Hero = () => {
+const HeroCV = () => {
   
   return (
     <div className='hero'>
@@ -10,4 +10,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroCV;

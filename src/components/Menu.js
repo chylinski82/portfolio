@@ -26,9 +26,6 @@ const Menu = () => {
                 <li>
                     <NavLink to={ROUTES.CV} onClick={() => setDropdown(false)}>CV</NavLink>
                 </li>
-                <li>
-                    <NavLink to={ROUTES.CONTACT} onClick={() => setDropdown(false)}>Contact</NavLink>
-                </li>
             </ul>
         </div>
     )

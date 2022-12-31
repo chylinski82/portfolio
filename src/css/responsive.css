@@ -1,10 +1,40 @@
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
+/*@media only screen and (orientation: portrait) {
+    h1 {
+        font-size: 1.5em;
+    }
 
-}
+    h2 {
+        font-size: 1.35em;
+    }
+
+    .container-grid {
+        grid-auto-rows: 350px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero {
+        width: 90%;
+        margin: 0 auto 0 10%;
+    }
+
+    .hero-project {
+        width: 80%;
+        margin: 70px auto 30px 10%;
+        height: 280px;
+    }
+
+    .project-left img, .project-right img {
+        width: 100%;
+        height: 80%;
+    }
+}*/
+
 /* Normal desktop :992px. */
 
 @media (min-width: 992px) and (max-width: 1197px) {
     .App {
+        max-width: 1197px;
         font-size: 20px;
     }
 
@@ -14,6 +44,10 @@
     
     .hero {
         width: 80%;
+    }
+
+    li + li {
+        margin-left: 30px;
     }
 
     .project-left {
@@ -30,6 +64,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .App {
+        max-width: 991px;
         font-size: 18px;
     }
 
@@ -41,8 +76,8 @@
         width: 80%;
     }
 
-    ul {
-        padding: 30px 40px 20px;;
+    .ul-navbar {
+        padding: 10px 40px 20px;;
     }
 
     li + li {
@@ -73,21 +108,67 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .App {
+        max-width: 767px;
         font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    p {
+        margin: 30px 0;
     }
 
     .main {
         width: 80%; 
     }
-    
+
+    .ul-navbar {
+        padding: 10px 30px 15px;
+    }
+
+    li + li {
+        margin-left: 20px;
+    }
+
+    .container-grid {
+        grid-auto-rows: 350px;
+        width: 90%;
+        margin: auto;
+    }
+
+    #contact {
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+
+    .contact-link {
+        display: inline;
+        color: #00ff00;  
+    }
+
     .hero {
         width: 90%;
+        margin: 70px auto 30px;
     }
 
-    ul {
-        padding: 25px 30px 15px;
+
+    .hero-project {
+        width: 80%;
+        margin: 70px auto 30px 10%;
+        height: 280px;
     }
 
+    .project-left img, .project-right img {
+        width: 100%;
+        height: 80%;
+    }
+    
     .project-left, .project-right {
         border: 2px solid #fffa86;
     }
@@ -104,35 +185,20 @@
     .project-right {
         grid-column: span 4 / -1;
     }
+
+    .read-more {
+        padding: 0 5px;
+    }
 }
 
 /* extra small mobile 320px. */
 
 @media (max-width: 575px) {
     .App {
-        font-size: 12px;
+        max-width: 575px;
+        font-size: 14px;
     }
 
-    .main {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    ul {
-        padding: 20px 20px 15px;
-    }
-
-    .project-left, .project-right {
-        border: 2px solid #fffa86;
-    }
-    
-    .project-left a img:hover, .project-right a img:hover {
-        border-top: 2px solid #fffa86;
-        border-left: 2px solid #fffa86;
-    }   
-}
-
-@media only screen and (orientation: portrait) {
     h1 {
         font-size: 1.5em;
     }
@@ -141,10 +207,33 @@
         font-size: 1.35em;
     }
 
+    p {
+        margin: 30px 0;
+    }
+
     .container-grid {
         grid-auto-rows: 350px;
         width: 90%;
         margin: auto;
+    }
+
+    .main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .ul-navbar {
+        padding: 10px 20px 15px;
+    }
+
+    #contact {
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+
+    .contact-link {
+        display: inline;
+        color: #00ff00;  
     }
 
     .hero {
@@ -162,4 +251,18 @@
         width: 100%;
         height: 80%;
     }
+
+    .project-left, .project-right {
+        border: 2px solid #fffa86;
+    }
+    
+    .project-left a img:hover, .project-right a img:hover {
+        border-top: 2px solid #fffa86;
+        border-left: 2px solid #fffa86;
+    }   
+
+    .read-more {
+        padding: 0 4px;
+    }
 }
+

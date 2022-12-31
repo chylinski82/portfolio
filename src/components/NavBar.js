@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import { ROUTES } from './App';
 
-const NavBar = () => {
+const NavBar = (props) => {
 
   return (
-    <ul>
+    <ul className='ul-navbar'>
       <li>
         <NavLink to={ROUTES.HOME}>Home</NavLink>
       </li>
@@ -15,9 +15,6 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink to={ROUTES.CV}>CV</NavLink>
-      </li>
-      <li>
-        <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
       </li>
     </ul>
   )

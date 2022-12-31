@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaCss3Alt, FaTerminal, FaPython, FaGoogle, FaGithub } from "react-icons/fa";
-import { SiFirebase, SiJavascript, SiRedux, SiHtml5 } from 'react-icons/si';
+import { FaReact, FaCss3Alt, FaTerminal, FaPython, FaGoogle, FaGithub, FaNodeJs } from "react-icons/fa";
+import { SiFirebase, SiJavascript, SiRedux, SiHtml5, SiOpenai } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
 
 const Skills = (props) => {
@@ -31,6 +31,10 @@ const Skills = (props) => {
           <p>JavaScript</p>
         </div>
         <div className="skill">
+          <SiOpenai size={iconSize()}/>
+          <p>ChatGPT</p>
+        </div>
+        <div className="skill">
           <SiRedux size={iconSize()}/>
           <p>Redux</p>
         </div>
@@ -57,6 +61,10 @@ const Skills = (props) => {
         <div className="skill">
           <DiJavascript1 size={iconSize()}/>
           <p>PhaserJS</p>
+        </div>
+        <div className="skill">
+          <FaNodeJs size={iconSize()}/>
+          <p>NodeJS</p>
         </div>
       </div>
     </div>
