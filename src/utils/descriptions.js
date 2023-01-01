@@ -73,9 +73,15 @@ const appointments = {
 const findYourHat = {
     key: 4,
     name: 'Find Your Hat',
-    description: `  is a simple game made with node.js, to play on the terminal,
-     which is a version of "Maze Runner". "Find Your Hat" generates random maze of a custom size.
-      To play, download/git clone the code, go to terminal and cd to the findYourHat directory, then type: node main.js `,
+    description: `In this game, you play on a field filled with holes and a single hat. 
+    Your goal is to navigate the field and reach the hat before falling into a hole or 
+    reaching the edge of the field.
+    To move around the field, use the W, A, S, and D keys to move up, left, down, and right, 
+    respectively. Be careful not to fall into a hole or go off the field, or you will lose the game. 
+    If you manage to reach the hat, you win!
+    The field is randomly generated each time you play, so no two games will be exactly the same. 
+    Can you reach the hat and emerge victorious? To play, download/git clone the code, go to terminal
+     and cd to the findYourHat directory, then type: node main.js `,
     tech: 'JavaScript, NodeJS',
     code: 'https://github.com/chylinski82/findYourHat',
     codeLink: 'github.com/chylinski82/findYourHat',
