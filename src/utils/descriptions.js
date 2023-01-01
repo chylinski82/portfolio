@@ -6,6 +6,7 @@ import appointmentsImg from '../images/app0intments.png';
 import appointmentsPhone from '../images/app0intments-phone.jpg';
 import findYourHatImg from '../images/find-your-hat.png';
 import portfolioImg from '../images/portfolio.png';
+import portfolioPhone from '../images/portfolio-phone.jpg';
 
 const theList = {
     key: 0,
@@ -73,7 +74,7 @@ const appointments = {
 const findYourHat = {
     key: 4,
     name: 'Find Your Hat',
-    description: `In this game, you play on a field filled with holes and a single hat. 
+    description: `  is game, where you play on a field filled with holes and a single hat. 
     Your goal is to navigate the field and reach the hat before falling into a hole or 
     reaching the edge of the field.
     To move around the field, use the W, A, S, and D keys to move up, left, down, and right, 
@@ -97,7 +98,7 @@ const portfolio = {
     tech: 'ReactJS, CSS',
     code: 'https://github.com/chylinski82/portfolio',
     codeLink: 'github.com/chylinski82/portfolio',
-    img: [portfolioImg, portfolioImg],
+    img: [portfolioImg, portfolioPhone],
     alt: 'screenshot of this website'
 }
 
